@@ -15,10 +15,10 @@ export default function ProductView() {
       } catch (error) {
         console.error("Error fetching products:", error);
       }
-    };
 
-    fetchProducts();
-  }, []); // Empty dependency array to run only once
+      fetchProducts();
+    };
+  }); // Empty dependency array to run only once
 
   return (
     <>

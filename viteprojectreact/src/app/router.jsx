@@ -5,7 +5,8 @@ import Hook2 from "../component/hooks/Hooks2";
 import ProductView from "../component/product/ProductView";
 import BuyNow from "../component/BuyNow";
 import Component1 from "../component/hooks/contextHook/Component1";
-import RegisterForm from "../component/Forms/RegisterForm";
+import HookRef from "../component/hooks/Hook3";
+// import RegisterForm from "../component/Forms/RegisterForm";
 
 const router = createBrowserRouter([
   {
@@ -32,9 +33,13 @@ const router = createBrowserRouter([
     path: "context",
     element: <Component1 />,
   },
+  // {
+  //   path: "register",
+  //   element: <RegisterForm />,
+  // },
   {
-    path: "register",
-    element: <RegisterForm />,
+    path: "hook3",
+    element: <HookRef />,
   },
 ]);
 export default router;
